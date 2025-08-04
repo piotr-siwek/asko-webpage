@@ -2284,20 +2284,7 @@ html {
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    left: 15px;
-    top: 0;
-    bottom: 100px;
-    width: 2px;
-    background: var(--primary-navy);
-    z-index: 1;
-}
-
-@media (max-width: 768px) {
-    .timeline::before {
-        display: none;
-    }
+    display: none;
 }
 
 .timeline-item {
