@@ -134,7 +134,7 @@ function initializeMobileMenu() {
 
 // Scroll Effects and Animations
 function initializeScrollEffects() {
-    // Intersection Observer for fade-in animations
+    // Intersection Observer for all animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -143,15 +143,27 @@ function initializeScrollEffects() {
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                console.log('Element intersecting:', entry.target);
                 entry.target.classList.add('visible');
+                console.log('Added visible class to intersecting element:', entry.target);
             }
         });
     }, observerOptions);
     
-    // Observe all fade-in elements
-    const fadeElements = document.querySelectorAll('.fade-in');
-    fadeElements.forEach(element => {
+    // Observe all animated elements
+    const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+    console.log('Found animated elements:', animatedElements.length);
+    animatedElements.forEach(element => {
         observer.observe(element);
+        
+        // If element is already in viewport, add visible class after a longer delay
+        if (element.getBoundingClientRect().top < window.innerHeight) {
+            console.log('Element in viewport:', element);
+            setTimeout(() => {
+                element.classList.add('visible');
+                console.log('Added visible class to:', element);
+            }, 500);
+        }
     });
     
     // Parallax effect for hero image
