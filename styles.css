@@ -1911,9 +1911,10 @@ html {
 
 .product-cta {
     padding: var(--spacing-3xl) 0;
-    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-navy-dark) 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--background-secondary) 0%, var(--background-accent) 100%);
+    color: var(--text-primary);
     text-align: center;
+    border-top: 1px solid var(--border-light);
 }
 
 .product-cta h2 {
@@ -1944,13 +1945,13 @@ html {
 
 .btn-outline {
     background: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--primary-navy);
+    color: var(--primary-navy);
 }
 
 .btn-outline:hover {
-    background: white;
-    color: var(--primary-navy);
+    background: var(--primary-navy);
+    color: white;
 }
 
 /* ===========================
