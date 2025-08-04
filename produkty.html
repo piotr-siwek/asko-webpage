@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkty - ASKO</title>
+    <meta name="description" content="Oferujemy wysokiej jakości produkty: podsufitkę PVC typu siding, panele PVC, folie okleinowe PVC i PP. Sprawdź nasze rozwiązania dla budownictwa i przemysłu meblarskiego.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/asko-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+        <p>Ładowanie...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/asko-logo.svg" alt="ASKO" class="logo">
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Strona główna</a></li>
+                <li class="nav-item"><a href="produkty.html" class="nav-link active">Produkty</a></li>
+                <li class="nav-item"><a href="podsufitka-siding.html" class="nav-link">Podsufitka</a></li>
+                <li class="nav-item"><a href="folie.html" class="nav-link">Folie</a></li>
+                <li class="nav-item"><a href="o-firmie.html" class="nav-link">O nas</a></li>
+                <li class="nav-item"><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+            </ul>
+
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <img src="assets/index-banner.png" alt="Produkty ASKO" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <nav class="breadcrumb">
+                    <a href="index.html">Strona Główna</a>
+                    <span class="separator">></span>
+                    <span class="current">Produkty</span>
+                </nav>
+                <h1 class="hero-title">Nasze Produkty</h1>
+                <p class="hero-subtitle">Wysokiej jakości rozwiązania dla budownictwa i przemysłu meblarskiego</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Overview -->
+    <section class="products-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kompleksowa Oferta Produktowa</h2>
+                <p>Oferujemy szeroką gamę produktów dostosowanych do różnych potrzeb branżowych</p>
+            </div>
+            
+            <div class="products-list">
+                <!-- Podsufitka PVC -->
+                <div class="product-row">
+                    <div class="product-image">
+                        <img src="assets/podsufitka-strona/hero.png" alt="Podsufitka PVC Siding">
+                    </div>
+                    <div class="product-content">
+                        <h3>Podsufitka PVC Typu Siding</h3>
+                        <p>Nowoczesna podsufitka PVC w wersji trzy-deskowej, idealna do estetycznego i trwałego wykończenia okapu dachowego.</p>
+                        
+                        <div class="product-features">
+                            <ul>
+                                <li>Długości: 3m i 3,5m</li>
+                                <li>Wersja trzy-deskowa</li>
+                                <li>Szeroka gama kolorów</li>
+                                <li>Odporność na UV i warunki atmosferyczne</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="podsufitka-siding.html" class="btn btn-primary">
+                            Dowiedz się więcej
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Panel PVC "10" -->
+                <div class="product-row reverse">
+                    <div class="product-image">
+                        <img src="assets/index-banner.png" alt="Panel PVC 10">
+                    </div>
+                    <div class="product-content">
+                        <h3>Panel PVC "10"</h3>
+                        <p>Nowoczesne i funkcjonalne rozwiązanie przeznaczone do estetycznego wykończenia podsufitek dachowych.</p>
+                        
+                        <div class="product-features">
+                            <ul>
+                                <li>Długość: 3,5m</li>
+                                <li>Kolory jednobarwne</li>
+                                <li>Trwały i odporny materiał</li>
+                                <li>Kompletny system montażowy</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="panel-pvc-10.html" class="btn btn-primary">
+                            Dowiedz się więcej
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Folia PVC -->
+                <div class="product-row">
+                    <div class="product-image">
+                        <img src="assets/index-banner.png" alt="Folia okleinowa PVC">
+                    </div>
+                    <div class="product-content">
+                        <h3>Folia Okleinowa PVC</h3>
+                        <p>Wysokiej jakości materiał wykończeniowy do zastosowań w branży budowlanej i meblarskiej.</p>
+                        
+                        <div class="product-features">
+                            <ul>
+                                <li>Grubości: 110-300 mikronów</li>
+                                <li>Szerokości: 50-1400mm</li>
+                                <li>Kolory jednobarwne i drukowane</li>
+                                <li>Certyfikowane surowce</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="folie.html" class="btn btn-primary">
+                            Dowiedz się więcej
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Folia PP -->
+                <div class="product-row reverse">
+                    <div class="product-image">
+                        <img src="assets/index-banner.png" alt="Folia okleinowa PP">
+                    </div>
+                    <div class="product-content">
+                        <h3>Folia Okleinowa PP</h3>
+                        <p>Ekologiczne rozwiązanie polipropylenowe do zastosowań w branży meblarskiej i produkcji drzwi.</p>
+                        
+                        <div class="product-features">
+                            <ul>
+                                <li>Grubości: 150-400 mikronów</li>
+                                <li>Szerokości: 50-1420mm</li>
+                                <li>Materiał ekologiczny</li>
+                                <li>Wysoka odporność na uszkodzenia</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="folie.html" class="btn btn-primary">
+                            Dowiedz się więcej
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section class="quality-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Jakość i Odpowiedzialna Produkcja</h2>
+                <p>Do produkcji naszych wyrobów wykorzystujemy certyfikowane surowce i kontrolujemy każdy etap procesu</p>
+            </div>
+            
+            <div class="quality-grid">
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3>Certyfikowane Surowce</h3>
+                    <p>Wykorzystujemy tylko sprawdzone materiały od zaufanych dostawców</p>
+                </div>
+                
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Kontrola Jakości</h3>
+                    <p>Każdy etap produkcji objęty jest systemem zarządzania jakością</p>
+                </div>
+                
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Ochrona Środowiska</h3>
+                    <p>Efektywność energetyczna i odpowiedzialne zarządzanie zasobami</p>
+                </div>
+                
+                <div class="quality-card">
+                    <div class="quality-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3>Innowacyjne Rozwiązania</h3>
+                    <p>Ciągłe doskonalenie procesów i rozwój portfolio produktowego</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="product-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Potrzebujesz Więcej Informacji?</h2>
+                <p>Skontaktuj się z nami, aby uzyskać szczegółowe informacje o produktach, wycenę lub doradztwo techniczne.</p>
+                
+                <div class="cta-buttons">
+                    <a href="kontakt.html" class="btn btn-primary btn-large">
+                        Skontaktuj się z nami
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="tel:+48817458945" class="btn btn-outline btn-large">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        Zadzwoń Teraz
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/asko-logo.svg" alt="ASKO Logo">
+                    </div>
+                    <p>Innowacyjne rozwiązania dla budownictwa</p>
+                    <p class="footer-description">
+                        Tworzymy wysokiej jakości produkty z pasją do doskonałości. 
+                        Zaufaj naszemu doświadczeniu i pozwól nam stworzyć rozwiązania dla Twoich potrzeb.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Szybkie linki</h4>
+                    <ul>
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><a href="produkty.html">Produkty</a></li>
+                        <li><a href="podsufitka-siding.html">Podsufitka</a></li>
+                        <li><a href="folie.html">Folie</a></li>
+                        <li><a href="o-firmie.html">O nas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Produkty</h4>
+                    <ul>
+                        <li><a href="podsufitka-siding.html">Podsufitka PVC siding</a></li>
+                        <li><a href="produkty.html">Panel PVC "10"</a></li>
+                        <li><a href="folie.html">Folia okleinowa PVC</a></li>
+                        <li><a href="folie.html">Folia okleinowa PP</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <div class="contact-info">
+                        <p><strong>Adres:</strong><br>
+                        Metalurgiczna 17G<br>
+                        20-234 Lublin</p>
+                        
+                        <p><strong>Telefon:</strong><br>
+                        <a href="tel:+48817458945">+48 81 745 89 45</a></p>
+                        
+                        <p><strong>Email:</strong><br>
+                        <a href="mailto:info@asko.pl">info@asko.pl</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ASKO Sp. z o.o. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
