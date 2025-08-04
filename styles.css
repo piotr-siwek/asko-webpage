@@ -317,13 +317,13 @@ body {
     padding: var(--spacing-xl);
     background: white;
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
     transition: var(--transition-medium);
 }
 
 .stat-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-xl);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
 }
 
 .stat-icon {
@@ -385,15 +385,14 @@ body {
     padding: var(--spacing-2xl);
     background: white;
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-light);
     transition: var(--transition-medium);
     text-align: center;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
 }
 
 .feature-icon {
@@ -443,7 +442,7 @@ body {
     background: white;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
     transition: var(--transition-medium);
     display: flex;
     flex-direction: column;
@@ -452,8 +451,8 @@ body {
 }
 
 .product-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 .product-image {
@@ -596,13 +595,13 @@ body {
     padding: var(--spacing-xl);
     border-radius: var(--radius-lg);
     text-align: center;
-    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-light);
     transition: var(--transition-medium);
 }
 
 .award-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
 }
 
 .award-item img {
@@ -953,15 +952,14 @@ html {
     background: white;
     padding: var(--spacing-xl);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-light);
     text-align: center;
     transition: var(--transition-medium);
 }
 
 .contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
 }
 
 .contact-icon {
@@ -1683,13 +1681,13 @@ html {
     background: white;
     padding: var(--spacing-xl);
     border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
     transition: var(--transition-medium);
 }
 
 .spec-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
 }
 
 .spec-icon {
@@ -1775,12 +1773,12 @@ html {
     border-radius: var(--border-radius-lg);
     padding: var(--spacing-md);
     margin-bottom: var(--spacing-md);
-    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
     transition: var(--transition-medium);
 }
 
 .color-item:hover .color-preview {
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadow-sm);
 }
 
 .color-sample {
@@ -1812,14 +1810,14 @@ html {
     background: white;
     padding: var(--spacing-xl);
     border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
     transition: var(--transition-medium);
     text-align: center;
 }
 
 .component-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
 }
 
 .component-icon {
@@ -2132,14 +2130,13 @@ html {
     background: white;
     padding: var(--spacing-xl);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
     border: 1px solid var(--border-light);
     transition: var(--transition-medium);
 }
 
 .timeline-content:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-sm);
 }
 
 .timeline-content h3 {
@@ -2171,15 +2168,14 @@ html {
     background: white;
     padding: var(--spacing-2xl);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
     border: 1px solid var(--border-light);
     transition: var(--transition-medium);
     text-align: center;
 }
 
 .specialization-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
 }
 
 .spec-icon {
@@ -2252,15 +2248,14 @@ html {
     background: white;
     padding: var(--spacing-xl);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-light);
     transition: var(--transition-medium);
     text-align: center;
 }
 
 .value-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
     border-color: var(--primary-navy);
 }
 
@@ -2346,14 +2341,13 @@ html {
     background: white;
     padding: var(--spacing-xl);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
     border: 1px solid var(--border-light);
     transition: var(--transition-medium);
 }
 
 .highlight-item:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
 }
 
 .highlight-number {
