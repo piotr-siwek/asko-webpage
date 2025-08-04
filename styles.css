@@ -138,6 +138,7 @@ body {
 .logo {
     height: 40px;
     transition: var(--transition-medium);
+    filter: brightness(0) saturate(100%) invert(15%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
 }
 
 .logo-link:hover .logo {
