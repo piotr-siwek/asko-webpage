@@ -14,6 +14,9 @@ function initializeApp() {
     initializeContactHeroParallax();
     initializeFAQ();
     initializeFormHandling();
+    // Added: enable counters and lazy-loading
+    initializeCounters();
+    initializeLazyLoading();
 }
 
 // Loading Spinner
