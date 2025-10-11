@@ -17,6 +17,8 @@ function initializeApp() {
     // Added: enable counters and lazy-loading
     initializeCounters();
     initializeLazyLoading();
+    // Set current year in footer
+    setCurrentYear();
 }
 
 // Loading Spinner
@@ -559,6 +561,14 @@ function trackEvent(eventName, eventData = {}) {
     // Placeholder for analytics tracking
     // Example: Google Analytics 4
     // gtag('event', eventName, eventData);
+}
+
+// Set current year in footer
+function setCurrentYear() {
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
 }
 
 // Initialize everything when DOM is ready
