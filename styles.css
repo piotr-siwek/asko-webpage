@@ -758,7 +758,7 @@ body {
 }
 
 .footer-section a:hover {
-    color: var(--text-primary);
+    color: var(--accent-orange);
 }
 
 .contact-info p {
