@@ -139,34 +139,24 @@ function initializeMobileMenu() {
 function initializeScrollEffects() {
     // Intersection Observer for all animations
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.15,
+        rootMargin: '0px'
     };
     
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                console.log('Element intersecting:', entry.target);
+            if (entry.isIntersecting && !entry.target.classList.contains('visible')) {
                 entry.target.classList.add('visible');
-                console.log('Added visible class to intersecting element:', entry.target);
+                // Unobserve immediately after adding visible class
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
     
     // Observe all animated elements
     const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
-    console.log('Found animated elements:', animatedElements.length);
     animatedElements.forEach(element => {
         observer.observe(element);
-        
-        // If element is already in viewport, add visible class after a longer delay
-        if (element.getBoundingClientRect().top < window.innerHeight) {
-            console.log('Element in viewport:', element);
-            setTimeout(() => {
-                element.classList.add('visible');
-                console.log('Added visible class to:', element);
-            }, 500);
-        }
     });
     
     // Parallax effect for hero image
@@ -194,24 +184,31 @@ function initializeParallax() {
 
 // Animations
 function initializeAnimations() {
-    // Add entrance animations to cards
+    // Add entrance animations to cards that don't already have animation classes
     const cards = document.querySelectorAll('.product-card, .feature-card, .stat-item, .award-item');
     
     const cardObserver = new IntersectionObserver(function(entries) {
         entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
+            if (entry.isIntersecting && !entry.target.classList.contains('animate-slide-up')) {
                 setTimeout(() => {
                     entry.target.classList.add('animate-slide-up');
                 }, index * 100);
+                cardObserver.unobserve(entry.target);
             }
         });
     }, {
         threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        rootMargin: '0px'
     });
     
     cards.forEach(card => {
-        cardObserver.observe(card);
+        // Only observe cards that don't have other animation classes
+        if (!card.classList.contains('fade-in') && 
+            !card.classList.contains('slide-in-left') && 
+            !card.classList.contains('slide-in-right') && 
+            !card.classList.contains('scale-in')) {
+            cardObserver.observe(card);
+        }
     });
     
     // Hover effects for interactive elements
@@ -231,8 +228,8 @@ function initializeHoverEffects() {
         });
     });
     
-    // Card tilt effect on hover
-    const cards = document.querySelectorAll('.product-card, .feature-card');
+    // Card tilt effect on hover (only for product-card, not feature-card)
+    const cards = document.querySelectorAll('.product-card');
     cards.forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-8px) rotateY(2deg)';
@@ -466,7 +463,6 @@ function showNotification(message, type = 'info') {
 
 // Error handling
 window.addEventListener('error', function(e) {
-    console.error('JavaScript error:', e.error);
     // Handle errors gracefully without breaking the user experience
 });
 
@@ -561,8 +557,6 @@ function initializeContactHeroParallax() {
 // Analytics tracking (placeholder)
 function trackEvent(eventName, eventData = {}) {
     // Placeholder for analytics tracking
-    console.log('Track event:', eventName, eventData);
-    
     // Example: Google Analytics 4
     // gtag('event', eventName, eventData);
 }

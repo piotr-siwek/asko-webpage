@@ -465,13 +465,7 @@ body {
     background: white;
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-light);
-    transition: var(--transition-medium);
     text-align: center;
-}
-
-.feature-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-sm);
 }
 
 .feature-icon {
@@ -519,12 +513,7 @@ body {
     border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
-    transition: var(--transition-medium);
     border: 1px solid var(--border-light);
-}
-
-.showcase-item:hover {
-    /* Hover effects removed */
 }
 
 .showcase-image {
@@ -536,11 +525,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition-medium);
-}
-
-.showcase-item:hover .showcase-image img {
-    /* Hover effects removed */
 }
 
 .showcase-content {
@@ -902,8 +886,7 @@ body {
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-    will-change: opacity, transform;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .fade-in.visible {
@@ -914,8 +897,7 @@ body {
 .slide-in-left {
     opacity: 0;
     transform: translateX(-50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    will-change: opacity, transform;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .slide-in-left.visible {
@@ -926,8 +908,7 @@ body {
 .slide-in-right {
     opacity: 0;
     transform: translateX(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    will-change: opacity, transform;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .slide-in-right.visible {
@@ -937,9 +918,8 @@ body {
 
 .scale-in {
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.9);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    will-change: opacity, transform;
 }
 
 .scale-in.visible {
@@ -948,19 +928,19 @@ body {
 }
 
 .stagger-delay-1 {
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
 }
 
 .stagger-delay-2 {
-    transition-delay: 0.4s;
+    transition-delay: 0.2s;
 }
 
 .stagger-delay-3 {
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 
 .stagger-delay-4 {
-    transition-delay: 0.8s;
+    transition-delay: 0.4s;
 }
 
 /* Smooth scrolling for anchor links */
